@@ -109,7 +109,7 @@ function display($id, $name, $location, $type, $rate, $reward, $date) {
     // Display items
     echo "<div class='bike'>";
     echo "<a class='bike-info' href='$self?add=$id&date=$date'>";
-    echo "<img class='icon' src='assets/bike.png'>";
+    echo "<img class='icon' src='../assets/bike.png'>";
     echo "<div class='bike-info'><strong>$name</strong><br>Location: $location<br>$type bike @ $$rate/day <br>Reward Points: $reward</div>";
     echo "</a></div>";
 }

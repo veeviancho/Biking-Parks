@@ -9,7 +9,7 @@
     </head>
     <body>
         <header class="banner">
-            <a href="index.php"><img id="img-left" src="assets/logo.png"></a>
+            <a href="index.php"><img id="img-left" src="../assets/logo.png"></a>
             <h1>Biking@Parks</h1>
         </header>
         <nav>
@@ -25,7 +25,7 @@
             </div>
         </nav>
         <div class="content center">
-            <img src="assets/id.png" alt="Biking@Parks">
+            <img src="../assets/id.png" alt="Biking@Parks">
             <h1>Profile</h1>
 
             <!-- Profile Display -->

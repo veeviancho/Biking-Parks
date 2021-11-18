@@ -12,7 +12,7 @@ include "nav.php";
     </head>
     <body>
         <header class="banner">
-            <a href="index.php"><img id="img-left" src="assets/logo.png"></a>
+            <a href="index.php"><img id="img-left" src="../assets/logo.png"></a>
             <h1>Biking@Parks</h1>
         </header>
         <nav>
@@ -28,7 +28,7 @@ include "nav.php";
             </div>
         </nav>
         <div class="content center">
-            <img src="assets/id.png" alt="Biking@Parks">
+            <img src="../assets/id.png" alt="Biking@Parks">
             <h1>Registration Form</h1>
 
             <?php
