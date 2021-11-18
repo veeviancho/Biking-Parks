@@ -1,0 +1,217 @@
+/* For development purposes */
+.pink {
+    border: 1px solid pink;
+}
+
+/* Main styles (including header, nav, footer) */
+body {
+    font-family: Verdana, Arial, sans-serif;
+    color: #0066CC;
+    margin: 0 auto;
+    border: 5px solid #0066CC;
+}
+
+.banner {
+    background-color: #0066CC;
+    padding: 2rem;
+}
+
+.banner h1 {
+    color: white;
+    display: inline;
+    padding-left: 2rem;
+}
+
+#img-left {
+    height: 100px;
+    vertical-align: middle;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav a {
+    text-decoration: none;
+    padding-right: 2.5rem;
+    color: black;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+nav li {
+    display: inline;
+}
+
+footer {
+    background-color: #0066CC;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+.content {
+    min-height: 500px;
+}
+
+/* Home Page */
+.left-column {
+    width: 200px;
+    margin: 20px 5px 20px 20px;
+    padding: 20px;
+    border: 1px solid lightgray;
+}
+
+form input, form select {
+    margin-bottom: 0.7rem;
+    width: 10rem;
+    height: 1.5rem;
+}
+
+form label {
+    margin-bottom: 0.3rem;
+    display: inline-block;
+}
+
+.columns {
+    display: flex;
+    flex-direction: row;
+}
+
+.mr {
+    margin-right: 10px;
+}
+
+@media screen and (max-width: 1080px) {
+    .columns {
+        flex-direction: column;
+    }
+}
+
+button {
+    color: white;
+    background-color: #0066CC;
+    border: none;
+    padding: 0.4rem 0.6rem;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    margin: 1rem 0;
+    font-size: 0.9em;
+}
+
+button:hover {
+    background-color: #024385;
+}
+
+.right-column {
+    width: 80%;
+    margin: 20px 20px 20px 5px;
+    padding: 20px;
+    border: 1px solid lightgray;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+}
+
+.icon {
+    width: 200px;
+    height: 170px;
+}
+
+.bike {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* align-items: center; */
+    background-color: #caeafa;
+    margin: 0.3em;
+    padding: 1em 1em 1em 2em;
+    border-radius: 2px;
+    font-size: 0.9em;
+}
+
+.bike:hover {
+    background-color: #91d7fa;
+    color: #004d9b;
+}
+
+.bike-info {
+    text-decoration: none;
+    color: #0066CC;
+}
+
+/* Registration and Login Page */
+.center {
+    text-align: center;
+    margin: 2rem;
+}
+
+.center img {
+    height: 150px;
+}
+
+.link {
+    text-decoration: none;
+    font-weight: bold;
+    color: #0066CC;
+}
+
+.link:hover {
+    text-decoration: underline;
+    color: black;
+}
+
+.error-msg {
+    color: red;
+}
+
+.success-msg {
+    color: green;
+}
+
+/* Contact page */
+.contact-content {
+    max-width: 95%;
+    margin: auto;
+    padding-top: 2rem;
+}
+
+.column {
+    width: 50%;
+}
+
+.mail {
+    text-decoration: none;
+    color: #0066CC;
+}
+
+.mail:hover {
+    text-decoration: underline;
+}
+
+/* profile */
+#form-display {
+    display: none;
+}
+
+/* Cart */
+.center-content {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cart-table td, .cart-table th {
+    padding: 0.5rem 2rem;
+    text-align: left;
+    /* border: 1px solid pink; */
+}
