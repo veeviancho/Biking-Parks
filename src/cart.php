@@ -5,12 +5,13 @@ include "nav.php";
 // Start session
 session_start();
 
-// If reset button is clicked
+// If empty cart button is clicked
 if (isset($_GET['empty'])) {
     // Empty session cart
     unset($_SESSION['cart']);
     // Redirect back to page
     header ("location: " . $_SERVER['PHP_SELF'] . '?' . SID);
+    exit;
 }
 
 ?>
@@ -47,9 +48,9 @@ if (isset($_GET['empty'])) {
 
             // Connect database
             include "dbconnect.php";
-
+            
             // Loop through cart array to get contents
-            $arr = $_SESSION['cart'];
+            $arr = !empty($_SESSION['cart']) ? $_SESSION['cart'] : "yo";
             $arr_count = count($_SESSION['cart']);
 
             if ($arr_count > 0) {
@@ -76,26 +77,24 @@ if (isset($_GET['empty'])) {
                         $rate = number_format($row['rental_rate'], 2, '.', '');
                         $points = $row['reward_points'];
 
-                        $date = isset($_SESSION['date'][$i]) ? $_SESSION['date'][$i] : "idk";
+                        $date = !empty($_SESSION['date'][$i]) ? $_SESSION['date'][$i] : "idk";
                         
                         echo "<tr>";
                         echo "<td>$name</td> <td>$location</td> <td>$type</td> <td>$date</td> <td>$$rate</td> <td>??</td>";
                         echo "</tr>";
                     }
                 }
-
-                echo "</table>";
+                
+                $self = $_SERVER['PHP_SELF'];
+                echo "</table><br>";
+                echo "<a href='confirm.php'><button name='confirm'>Confirm Order</button></a>";
+                echo "&nbsp;<a href='$self?empty=1'><button name='empty'>Empty Cart</button></a>";
 
             } else {
                 echo "No item added in cart yet.";
             }
 
-            ?>
-
-            <br>
-            <button name="confirm">Confirm Order</button>
-            <a href="<?php echo $_SERVER['PHP_SELF'] ?>?empty=1"><button name="empty">Empty Cart</button></a>
-
+            ?>  
         </div>
         <footer>
             <p>All Rights Reserved &copy; Vivian Cho 2021</p>

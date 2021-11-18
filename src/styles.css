@@ -210,8 +210,15 @@ button:hover {
     margin-right: auto;
 }
 
+.cart-table {
+    border-collapse: collapse;
+}
+
 .cart-table td, .cart-table th {
-    padding: 0.5rem 2rem;
+    padding: 0.8rem 2rem;
     text-align: left;
-    /* border: 1px solid pink; */
+}
+
+.cart-table tr {
+    border-bottom: 1px solid lightgray;
 }

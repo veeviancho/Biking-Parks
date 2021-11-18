@@ -9,7 +9,7 @@
     </head>
     <body>
         <header class="banner">
-            <a href="index.php"><img id="img-left" src="assets/logo.png"></a>
+            <a href="index.php"><img id="img-left" src="../assets/logo.png"></a>
             <h1>Biking@Parks</h1>
         </header>
         <nav>
